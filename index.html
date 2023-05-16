@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chris Cahill Inspirational Quote of the Day</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <script language="javascript">
+        window.onload = function() {
+
+            const quotes = [
+                "I am a millennial.",
+                "I am impressive as I am an expert lock picker.",
+                "I f*cking hate trees.",
+                "I was overtaken by Seal in a Ferrari.",
+                "I'm already perfectly developed thank you.",
+                "So it turns out I'm anatomically perfect.",
+                "I’ve got medals all over the place.",
+                "Sorry, I ran out of credi.t",
+                "I've been to a James Blunt gig.",
+                "I have gates and a fantastic security system.",
+                "I have no emotion.",
+                "I know plusses and minuses.",
+                "My career is built on blagging, I'm an expert.",
+                "I have access to guns.",
+                "I’m like a ninja.",
+                "The first single I ever bought was Blue by Eiffel 65.",
+                "I’ve shot a lot of weapons at a lot of things."
+            ];
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const randomQuote = quotes[randomIndex];
+
+            var tag_id = document.getElementById('quote')
+            console.log(tag_id);
+            tag_id.innerHTML = randomQuote
+        };
+    </script>
+</head>
+
+<body>
+    <blockquote id='quote'>The man who comes back through the door in the wall will never be quite the same as the man who went out.</blockquote>
+    <cite>Chris Cahill</cite>
+</body>
+
+</html>
